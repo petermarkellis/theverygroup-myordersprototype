@@ -4,6 +4,7 @@ import Link from "next/link";
 import MobileHeader from "../../MobileHeader";
 import ORDERS from "../../ordersData"
 import Image from "next/image";
+import { CheckCircleIcon } from "@heroicons/react/24/solid";
 
 type PaymentInstallment = { label: string; amount: string; due: string; status: string };
 type PaymentMock = {
@@ -134,7 +135,10 @@ export default function PaymentDetailsPage() {
         {/* Paid in full message */}
         {isPaidInFull && (
           <div className="bg-zinc-50 rounded-lg p-5 mb-6">
-            <div className="text-lg font-semibold text-green-700">This order was paid in full.</div>
+            <div className="flex items-center gap-2">
+              <CheckCircleIcon className="w-6 h-6 text-green-700" />
+              <span className="text-lg font-semibold text-green-700">This order was paid in full.</span>
+            </div>
           </div>
         )}
       </div>

@@ -44,7 +44,7 @@ export default function OrdersPage() {
   });
 
   return (
-    <div className="min-h-screen bg-white pb-20">
+    <div className="min-h-screen bg-slate-50 pb-20">
       <MobileHeader />
       <div className="bg-white sticky top-0 z-10 text-zinc-900">
         <div className="px-4 pt-4 pb-2 flex flex-col gap-2">
@@ -91,10 +91,7 @@ export default function OrdersPage() {
           </div>
         ) : (
           filteredOrders.map((order, idx) => (
-            <div key={idx}>
-              {idx !== 0 && (
-                <div className="border-t border-gray-400 my-8" />
-              )}
+            <div key={idx} className="mb-8 last:mb-0">
               <div className="bg-white overflow-hidden border-2 border-black rounded-xl">
                 <div className="flex justify-between items-start border-b px-1 py-4">
                   <div className="p-2">
