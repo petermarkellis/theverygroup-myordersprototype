@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Bars3Icon, MagnifyingGlassIcon, UserCircleIcon, HeartIcon, ShoppingBagIcon } from "@heroicons/react/24/outline";
 export default function MobileHeader() {
   return (
-    <nav className="flex items-center px-2 py-2 bg-white border-b border-zinc-100 md:hidden">
+    <nav className="flex items-center px-2 py-2 bg-white border-b border-zinc-100">
       <div className="flex flex-col items-center gap-0 flex-shrink-0">
         <Bars3Icon className="w-7 h-7 text-black" />
         <span className="text-xs text-zinc-600 mt-1 font-semibold">Menu</span>
